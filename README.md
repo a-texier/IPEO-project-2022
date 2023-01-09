@@ -27,10 +27,10 @@ pip install -r requirements.txt
 ```
 ```
 Download the dataset which contains 12’262 image and labels tiles collected by swisstopo in the Dents du Midi area. 
---> link: [https://enacshare.epfl.ch/drCz5HgLJyFPXifNBWad7](https://enacshare.epfl.ch/drCz5HgLJyFPXifNBWad7)
 Place the ipeo_data.zip in your current folder with the notebook evaluation.ipynb. 
 Run evaluation.ipynb
 ```
+--> link: [https://enacshare.epfl.ch/drCz5HgLJyFPXifNBWad7](https://enacshare.epfl.ch/drCz5HgLJyFPXifNBWad7)
 
 ## How to use Evaluation.ipynb + Remarks
 
@@ -44,6 +44,7 @@ Run evaluation.ipynb
 3) Test the model on the test dataset
 4) See the results: samples of the test set + confusion matrix + data information
 ```
+--> link: [Google drive link model](https://drive.google.com/drive/folders/1sQJo2g4o0YW3KZgzkQ4aUWjjkqJG3Jpn?usp=sharing)
 
 * Structure of the code (in detail)
 ```
