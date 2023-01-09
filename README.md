@@ -35,7 +35,17 @@ Run evaluation.ipynb
 ## How to use Evaluation.ipynb + Remarks
 
 
-* Structure of the code 
+* To see our best results
+```
+- Download the model opti (~100MB) from the google drive link  and place it in the notebook folder
+- RUN the notebook Evaluation.ipynb. It will:
+1) Load the data
+2) Load the model (provided)
+3) Test the model on the test dataset
+4) See the results: samples of the test set + confusion matrix + data information
+```
+
+* Structure of the code (in detail)
 ```
 1)          Load data       |  Load the Model (our best model) |       Set up the data
 2)   Transforms train + val |     Deal with imbalanced data    |    Define the model architecture
@@ -43,14 +53,6 @@ Run evaluation.ipynb
 
 
 ```
-* To see our best results
-```
-1) Load the data
-2) Load the model (provided)
-3) Test the model on the test dataset
-4) See the results: confusion matrix + data information
-```
-
 * Detail and explaination of the code
 ```
 1) Option for training a model:
