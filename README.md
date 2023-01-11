@@ -15,7 +15,12 @@ the RGB bands and the different land cover classes, and to make predictions abou
 pixels based on their RGB values.
 
 ## Setup
-First, make sure to have the 3.9 version of Python installed as pytorch does not support more recent versions.
+First, download the model and the dataset which contains 12’262 image and labels tiles collected by swisstopo in the Dents du Midi area. 
+Place the *ipeo_data.zip* and the *model_opti* files at the root level of the directory (same folder as *evaluation.ipynb*).
+
+--> link of the model and dataset: [Google drive link](https://drive.google.com/drive/folders/1sQJo2g4o0YW3KZgzkQ4aUWjjkqJG3Jpn?usp=sharing)
+
+Before the next part, make sure to have the 3.9 version of Python installed as pytorch does not support more recent versions.
 
 Then, run the following commands:
 ```
@@ -28,24 +33,22 @@ pip install -r requirements.txt
 
 ```
 
-Download the dataset which contains 12’262 image and labels tiles collected by swisstopo in the Dents du Midi area. 
-Place the ipeo_data.zip in your current folder with the notebook evaluation.ipynb. 
 
---> link: [Google drive link](https://drive.google.com/drive/folders/1sQJo2g4o0YW3KZgzkQ4aUWjjkqJG3Jpn?usp=sharing)
+
+
 
 ## How to use Evaluation.ipynb + Remarks
 
 
 * To see our best results
 ```
-- Download the model opti (~100MB) from the google drive link  and place it in the notebook folder
-- RUN the notebook Evaluation.ipynb. It will:
+- RUN the notebook Evaluation.ipynb. 
+It will:
 1) Load the data
 2) Load the model (provided)
 3) Test the model on the test dataset
 4) See the results: samples of the test set + confusion matrix + data information
 ```
---> link: [Google drive link](https://drive.google.com/drive/folders/1sQJo2g4o0YW3KZgzkQ4aUWjjkqJG3Jpn?usp=sharing)
 
 * Structure of the code (in detail)
 ```
