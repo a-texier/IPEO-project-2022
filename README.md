@@ -77,7 +77,7 @@ It will:
  <p align="center"> <img src="https://github.com/a-texier/IPEO-project-2022/blob/main/Results/100epochW(boost0(%2B5)%2C1(%2B25)%2C6(%2B5)%20et%207(%2B3)%2BD(0.1(1)%2C0.5(2)%2C0.3(5)%2C0.3(7)).png" width="500" title="hover text"></p> 
 
 * Data information
- <p align="center"> <img src="https://github.com/a-texier/IPEO-project-2022/blob/main/Results/best_results_with_imbalabced_data_methods.png" width="700" title="hover text"></p> 
+ <p align="center"> <img src="https://github.com/a-texier/IPEO-project-2022/blob/main/Results/best_results_with_imbalabced_data_methods_dice.png" width="700" title="hover text"></p> 
  
 
  * Example of predictions (Often better than the hand labeling)
