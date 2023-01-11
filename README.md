@@ -15,21 +15,22 @@ the RGB bands and the different land cover classes, and to make predictions abou
 pixels based on their RGB values.
 
 ## Setup
+First, make sure to have the 3.9 version of Python installed as pytorch does not support more recent versions.
 
+Then, run the following commands:
 ```
 # create a local virtual environment in the venv folder
 python -m venv venv
 # activate this environment
-source venv/bin/activate
+venv\Scripts\activate
 # install requirements
 pip install -r requirements.txt
 
 ```
-```
+
 Download the dataset which contains 12’262 image and labels tiles collected by swisstopo in the Dents du Midi area. 
 Place the ipeo_data.zip in your current folder with the notebook evaluation.ipynb. 
-Run evaluation.ipynb
-```
+
 --> link: [Google drive link](https://drive.google.com/drive/folders/1sQJo2g4o0YW3KZgzkQ4aUWjjkqJG3Jpn?usp=sharing)
 
 ## How to use Evaluation.ipynb + Remarks
@@ -57,11 +58,15 @@ Run evaluation.ipynb
 * Detail and explaination of the code
 ```
 1) Option for training a model:
-      -  The model's name : "unet" or "resunet"
-      -  The loss criterion: "dice" or "cross"
-      -  Class_weights: class_weight or None 
-      -  Data_augmentation: True or False
+      -  is_training: True or False (choose to train a new model or to continue with the imported one)
+      -  model_factory: "unet" or "resunet" (choose which model to use)
+      -  criterion: "dice" or "cross" (choose which loss function to use)
+      -  Class_weights: class_weight or None (choose to use or not the class weights method)
+      -  Data_augmentation: True or False (choose to use or not the data augmentation method)
       -  RF: True or False
+      -  num_epochs: int number (number of epoch onwhich the model is trained)
+      -  frac: number in [0.05, 1.0] (fraction of the data used to train the model)
+      -  
 ```
 
 ## Some results with the model given:
